@@ -3,10 +3,34 @@
     padding: 0;
 }
 
+html {
+    width: min-content;
+    margin: 0px;
+}
+
+body {
+    width: 100%;
+}
+
 .fon {
-    background-color: rgba(173, 109, 66, 0.158);
+    background-color: rgba(241, 226, 226, 0.808);
     height: 5000px;
 
+}
+.animcont {
+    width: 100%;
+    height: 15%;
+    background-color: black;
+}
+
+.anim {
+    width: 100%;
+    height: 500px;
+}
+
+.animation {
+    width: 100%;
+    height: 100%;
 }
 
 html {
@@ -52,7 +76,7 @@ html {
 }
 
 .leftnav {
-    background-color: rgba(160, 114, 66, 0.299);
+    background-color: rgba(244, 218, 218, 0.834);
     height: 2500px;
     width: 17%;
 
@@ -71,11 +95,15 @@ a {
 }
 
 /* media */
-@media (min-width: 2170px) {
+@media (min-width: 2170px) and (max-width: 2800px) {
     .topnav {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+    }
+
+    .anim {
+        height: 1000px;
     }
 }
 
@@ -161,6 +189,10 @@ a {
         width: 500px;
         height: 35px;
     }
+
+    .anim {
+        height: 650px;
+    }
 }
 
 @media (min-width: 1000px) and (max-width: 1200px) {
@@ -191,5 +223,27 @@ a {
     .topnav>nav>ul {
         justify-content: space-evenly;
         align-items: center;
+    }
+
+    .anim {
+        height: 700px;
+    }
+}
+
+@media (min-width: 636px) {
+    html {
+        width: 100%;
+    }
+}
+
+@media (min-width: 2800px) and (max-width: 3400px) {
+    .anim {
+        height: 1200px;
+    }
+}
+
+@media (min-width: 3400px) {
+    .anim {
+        height: 1500px;
     }
 }
